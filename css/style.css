@@ -1,0 +1,108 @@
+main {
+  margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 90%;
+  }
+}
+
+.btn-floating {
+  float: right;
+  position: relative;
+  bottom: 3rem;
+  margin-right: 0;
+}
+
+#movies img,
+#movie img {
+  width: 100%;
+}
+
+.btn-custom {
+  background-color: #4285f4;
+}
+
+.preloader-wrapper {
+  margin-top: 6px;
+}
+
+.preloader-wrapper .spinner-blue-only {
+  border-color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+/* App Styles */
+
+#fact {
+  display: none;
+}
+
+.grey-skin input[type="text"]:focus:not([readonly]),
+.grey-skin input[type="email"]:focus:not([readonly]),
+.grey-skin input[type="number"]:focus:not([readonly]),
+.grey-skin textarea.md-textarea:focus:not([readonly]) {
+  border-color: #3f51b5;
+  box-shadow: 0 1px 0 0 #3f51b5;
+}
+
+.grey-skin input[type="text"]:focus:not([readonly]) + label,
+.grey-skin input[type="email"]:focus:not([readonly]) + label,
+.grey-skin input[type="number"]:focus:not([readonly]) + label,
+.grey-skin textarea.md-textarea:focus:not([readonly]) + label {
+  color: #3f51b5;
+}
+
+svg {
+  margin-top: 5px;
+  color: #f5f5f5;
+}
+
+/* Main content */
+
+#current {
+  border-bottom: 5px solid #f5f5f5;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+/* Fade in animation */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.imgs {
+  border: 5px solid #1d1d22;
+}
+
+#current {
+  border-top: 5px solid #1d1d22;
+  border-left: 5px solid #1d1d22;
+  border-right: 5px solid #1d1d22;
+  border-bottom: none;
+}
+
+.imgs {
+  background: #1d1d22;
+}
